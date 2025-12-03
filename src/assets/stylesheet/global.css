@@ -1,0 +1,155 @@
+@import "tailwindcss";
+
+.inter {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+@layer components{
+    body{
+        font-family: "Inter", sans-serif;
+        @apply
+        bg-slate-50
+        scroll-smooth
+        ;
+    }
+    label{
+        
+        @apply
+        text-lg
+        font-medium
+        ;
+    }
+    h1{
+        font-family: "Montserrat", sans-serif;
+        @apply
+        text-xl
+        font-semibold
+        ;
+    }
+    nav{
+        @apply
+        bg-indigo-600/70
+        w-full
+        z-50
+        overflow-hidden
+        rounded-2xl
+        text-white
+        backdrop-blur-2xl
+        backdrop-saturate-200
+        py-2
+        px-4
+        ;
+    }
+    ul{
+        @apply
+        flex
+        items-center
+        justify-between
+        ;
+    }
+    nav ul div{
+        @apply
+        flex
+        items-center
+        gap-8
+        
+        ;
+    }
+    nav ul div li{
+        @apply
+        flex
+        items-center
+        cursor-pointer
+        hover:text-slate-200
+        rounded-lg
+        duration-300
+        
+        ;
+    }
+    .event-nav{
+        @apply
+        bg-amber-500
+        py-2
+        px-5
+        font-semibold
+        rounded-lg
+        ;
+    }
+    button{
+        @apply
+        bg-amber-500
+        text-white
+        py-2 px-4
+        rounded-xl
+        duration-300
+        hover:bg-amber-500/80
+        cursor-pointer
+        ;
+    }
+    .card{
+        @apply
+        bg-slate-200/80
+        shadow-2xl/25
+        rounded-2xl
+        p-2
+        ;
+    }
+    .card2{
+        @apply
+        bg-slate-50
+        shadow-xl/20
+        rounded-lg
+        items-center
+        grid
+        p-2
+        ;
+    }
+    .card-article{
+        @apply
+        text-center
+        grid gap-2
+        ;
+    }
+    .card-article h1{
+        @apply
+        text-3xl
+        text-indigo-800
+        ;
+    }
+    .card-article label{
+        @apply
+        text-sm
+        ;
+    }
+    .event-image{
+        @apply
+        object-cover
+        h-[250px]
+        w-full
+        rounded-lg
+        ;
+    }
+    .subscribe{
+        @apply
+        ring-2
+        ring-indigo-600
+        rounded-xl
+        p-1
+        w-fit
+        ;
+    }
+    input{
+        @apply
+        rounded-none
+        outline-0
+        border-0
+        text-sm
+        ;
+    }
+}
