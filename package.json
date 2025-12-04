@@ -1,6 +1,10 @@
 {
   "dependencies": {
     "@tailwindcss/cli": "^4.1.17",
+    "lucide": "^0.555.0",
     "tailwindcss": "^4.1.17"
-  }
+  },
+  "scripts": {
+  "dev": "tailwindcss -i ./src/assets/stylesheet/global.css -o ./src/output.css --watch"
+}
 }

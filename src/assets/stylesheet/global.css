@@ -142,6 +142,7 @@
         rounded-xl
         p-1
         w-fit
+        flex
         ;
     }
     input{
@@ -150,6 +151,33 @@
         outline-0
         border-0
         text-sm
+        ;
+    }
+    .listing{
+        @apply
+        grid
+        justify-items-center
+        text-center
+        
+        lg:flex
+        lg:gap-2
+        ;
+    }
+    .icons{
+        @apply
+        size-5
+        ;
+    }
+    .event-icon{
+        @apply
+        text-white
+        bg-indigo-600
+        rounded-full
+        py-2
+        px-4
+        flex
+        items-center
+        gap-2
         ;
     }
 }
